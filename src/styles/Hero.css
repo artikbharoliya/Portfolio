@@ -1,0 +1,150 @@
+.Hero_card{
+
+
+    border-radius: 20px;
+    /* margin-bottom: 20px; */
+    background: #fff;
+    box-shadow:  -10px 10px 20px #bcbcbc, 
+             10px -10px 20px #ffffff;
+
+    display: flex;
+    align-items: center;
+    
+    justify-content: center;
+    flex-direction: column;
+    padding:0 60px 60px 60px;
+    border: 0.3px solid rgba(184, 184, 184, 0.342);
+    font-family: 'Montserrat';
+    font-weight: 600;
+    max-width: 800px !important;
+    z-index: +12;
+    margin-left: 8px;
+    margin-right: 8px
+
+
+}
+
+.Hero_card_container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    height: 100vh;
+    /* background-color:#f8f8f8; */
+    /* z-index: -5; */
+}
+
+.Hero_Img{
+    position: relative;
+    top: -50px;
+    margin-bottom: -30px;
+    transition: all 0.2s ease-out;
+    border-radius: 50%;
+    border: 4px solid rgb(224, 224, 224);
+    height:100px;
+    width: 100px;
+    background-image: url('../assets/My.jpeg');
+    object-fit: contain ; 
+    background-size: contain;
+
+}
+.Hero_Img:hover{
+    transform: scale(1.1);
+    
+
+}
+.Hero_Img > img{
+    border-radius: 50%;
+    height:100px;
+    
+}
+
+.Developer{
+    /* margin: 10px 0; */
+    font-size: 28px;
+    text-align: center;
+    color: var(--mainfontcolor);
+    /* font-weight: 950; */
+    font-family: 'Raleway', sans-serif;
+    /* white-space: nowrap; */
+    
+}
+
+
+.Name_Class{
+    font-size: 18px;
+}
+@media (max-width: 576px) { 
+    .Name_Class{
+        font-size: 14px;
+    }
+    .Developer{
+    font-size: 20px;
+    }
+ }
+.Social_links{
+    display: flex;
+}
+.socialIcon {
+    filter: saturate(10%);
+    margin: 0 8px;
+    transition: all 0.2s ease-out;
+}
+.socialIcon:hover{
+    cursor: pointer;
+    filter: saturate(100%);
+    transform: scale(1.18);
+    
+}
+.Normal_Font{
+    font-size:14px;
+    color: black;
+    font-weight: 500;
+    font-family: 'Montserrat';
+}
+.Buttons_section > div{
+    display: flex;
+    justify-content: center;
+    
+}
+.Hero_button{
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    min-width: 200px;
+    font-size:14px;
+    background-color: var(--mainfontcolor);
+    border-radius: 20px;
+    border:none;
+    padding: 10px;
+    color: white;
+    transition: all 0.3s ease-out;
+    box-shadow: -7px 7px 10px #bcbcbc, 
+    7px -7px 10px #ffffff;
+}
+.Hero_button::after{
+    content: ">";
+    position: relative;
+    right: -20px;
+    /* margin-left: 5px; */
+    visibility: hidden;
+    transition: all 0.4s ease-out;
+    color: var(--mainfontcolor);
+}
+.Hero_button:hover::after{
+
+    right: -11px;
+    visibility: visible;
+    
+    /* margin-left: 5px; */
+    /* visibility: hidden; */
+}
+.Hero_button:hover{
+    background-color: white;
+
+    box-shadow: 0px 0px 0px 1px var(--mainfontcolor) inset;
+    box-shadow:  -7px 7px 10px #bcbcbc, 
+                    7px -7px 10px #ffffff,
+                    0px 0px 0px 1px var(--mainfontcolor) inset;
+    color: var(--mainfontcolor);
+}

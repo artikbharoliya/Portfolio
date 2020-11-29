@@ -1,0 +1,101 @@
+
+
+/* Position and sizing of burger button */
+.bm-burger-button {
+    position: fixed;
+    width: 36px;
+    height: 30px;
+    right: 56px;
+    top: 36px;
+  }
+   
+  /* Color/shape of burger icon bars */
+  .bm-burger-bars {
+    background: #333;
+  }
+   
+  /* Color/shape of burger icon bars on hover*/
+  .bm-burger-bars-hover {
+    background: #a90000;
+  }
+   
+  /* Position and sizing of clickable cross button */
+  .bm-cross-button {
+    height: 24px;
+    width: 24px;
+    right: 40px !important;
+  }
+   
+  /* Color/shape of close button cross */
+  .bm-cross {
+    background: #333;
+  }
+   
+  /*
+  Sidebar wrapper styles
+  Note: Beware of modifying this element as it can break the animations - you should not need to touch it in most cases
+  */
+  .bm-menu-wrap {
+    position: fixed;
+    height: 100%;
+    right: -20px !important;
+  }
+   
+  /* General sidebar styles */
+  .bm-menu {
+    /* background: #fff; */
+    padding: 2.5em 1.5em 0;
+    font-size: 1.15em;
+    background: var(--maincolor);
+    box-shadow:  -13px 13px 26px #d7d7d7, 
+                 13px -13px 26px #ffffff;
+  }
+   
+  /* Morph shape necessary with bubble or elastic */
+  .bm-morph-shape {
+    fill: #fff;
+  }
+   
+  /* Wrapper for item list */
+  .bm-item-list {
+    color: #6C63FF;
+    padding: 0.8em;
+  }
+   
+  /* Individual item */
+  .bm-item {
+    display: inline-block;
+  }
+   
+  /* Styling of overlay */
+  .bm-overlay {
+    /* background:var(--maincolor) !important; */
+    opacity: 0 !important;
+    transition: all 0.8s ease-out !important;
+  }
+
+  .custom-item{
+      color: var(--mainfontcolor) ;
+      /* color: rebeccapurple; */
+      margin-bottom: 1.5rem;
+      padding: 10px 0 10px 30px;
+      border-radius: 30px;
+        /* transition: all 0.1s ease-in-out !important; */
+  }
+  .custom-item:hover{
+
+    background: linear-gradient(145deg, #6C63FF, #7770ff);
+    box-shadow:  5px 5px 6px #cdcdcd, 
+             -5px -5px 6px #ffffff;
+}
+.custom-item:hover > a{
+
+  color: white !important;
+
+  cursor: pointer !important;
+  text-decoration: none !important;
+
+}
+
+
+  

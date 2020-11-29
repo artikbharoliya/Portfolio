@@ -1,0 +1,23 @@
+.Home{
+    
+   
+    /* z-index: -6; */
+
+}
+
+.Contact__Popup{
+    position: absolute;
+    bottom: 40px;
+    right: 80px;
+    background-color: var(--mainfontcolor);
+    color: white;
+    height: 55px;
+    width: 55px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: box-shadow 0.3s ease-out;
+    box-shadow:  -5px 5px 10px #bcbcbc, 
+             5px -5px 10px #ffffff;
+}

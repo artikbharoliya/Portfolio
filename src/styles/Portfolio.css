@@ -1,0 +1,168 @@
+.Portfolio{
+  
+    width: 100%;
+
+}
+
+
+::-webkit-scrollbar {
+    width: 0px;  /* Remove scrollbar space */
+    background: transparent;  /* Optional: just make scrollbar invisible */
+}
+/* Optional: show position indicator in red */
+::-webkit-scrollbar-thumb {
+    width: 0px;  /* Remove scrollbar space */
+    background: transparent; 
+}
+
+li{
+  list-style-type: none;
+}
+
+.Portfolio_title{
+    color: var(--mainfontcolor);
+    font-size: 32px;
+    margin:110px 0;
+    font-family: 'Montserrat';
+    font-weight: 900;
+    
+}
+
+.DevImage{
+    position: absolute;
+    height: 500px;
+    bottom: 50px;
+    z-index: -2;
+    margin-left: -190px;
+}
+
+.Spacer{
+    margin-top: 150px;
+}
+.Project{
+
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+
+}
+.Project:last-child{
+    margin-bottom: 60px;
+}
+
+.Porject_Image{
+    border-radius: 18px;
+    width: 100%;
+
+    /* max-width: 690px; */
+}
+
+
+@media (max-width: 575.98px) { 
+    .left_marginer{
+        margin-left: 0 !important;
+    }
+    .Right_marginer{
+        margin-right: 0 !important;
+    }
+
+
+}
+
+
+@media (max-width: 767.98px) { 
+
+ }
+
+
+
+.Project_content{
+    margin-top: 10px;
+    
+}
+.OverLap{
+    z-index: +10;
+}
+.Discription_flex_right{
+    display: flex;
+    flex-direction: column;
+
+    justify-content: center;
+    align-items: flex-start;
+}
+.Discription_flex_left{
+
+    display: flex;
+    flex-direction: column;
+
+    justify-content: center;
+    align-items: flex-end;
+}
+.Project_content>div{
+    margin-bottom: 20px;
+}
+.left_marginer{
+    margin-left: -50px;
+}
+.Right_marginer{
+    margin-right: -50px;
+}
+
+
+.Project_content>div :last-child{
+    margin-bottom: 0px;
+}
+.Project_title{
+    font-size: 22px;
+    font-weight: 600;
+
+    color: var(--mainfontcolor);
+    font-family: 'Montserrat';
+    font-size: 24px;
+}
+.Project_disciption{
+    background-color: var(--mainfontcolor);
+    padding: 15px 28px;
+    border-radius: 22px;
+
+    box-shadow:  -10px 10px 20px #6b63ff3b;
+    font-family: 'Montserrat';
+    
+
+}
+.Tex_align_Right{
+    text-align: left;
+}
+.Tex_align_Left{
+    text-align: right;
+}
+.Project_disciption_para{
+ 
+    color: white;
+    font-size: 14px;
+}
+.Project_technologies{
+    font-size: 12px;
+    margin-top: 12px;
+    
+}
+a:hover{
+    color: white !important;
+    text-decoration: none !important;
+}
+.Project_Link{
+    background-color: #6b63ff60;
+    max-width: 110px;
+    font-size: 14px;
+    text-align: center;
+    color:  var(--mainfontcolor);
+    border-radius: 6px;
+    padding: 4px 10px;
+    transition: all 0.2s ease-in;
+    font-family: 'Montserrat';
+}
+.Project_Link:hover{
+    background-color: #6b63ff;
+    color:  white !important;
+    cursor: pointer;
+}
